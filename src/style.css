@@ -1,0 +1,16 @@
+.case{
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+p{
+    text-align: center;
+    font-size: 70pt;
+    transform: rotateZ(45deg);
+    padding: 0;
+    margin: 0;
+    cursor: default;
+}
+.contener{
+}
