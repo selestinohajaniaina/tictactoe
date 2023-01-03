@@ -37,11 +37,11 @@ $(document).ready(function(){
             let response = resulte[i];
             if(response=="000" || response=="111"){
                 setTimeout(()=>{
-                    alert('ok');
+                    alert('La partie est terminé! ');
                 },500);
             }
         }
     });
 });
-let i = 78
- re
+// let i = 78
+//  re
