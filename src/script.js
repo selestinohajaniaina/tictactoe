@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    const croix = "<p>+</p>";
-    const circle = "<p style='transform:none;font-size:50pt;'>O</p>";
+    const croix = "<p style='color:#b00606'>+</p>";
+    const circle = "<p style='transform:none;font-size:50pt;color:#359f00'>O</p>";
     let tour=0;
     let colonne="num";
     $(".case").click(function(){
@@ -33,15 +33,27 @@ $(document).ready(function(){
 
         //comparate with id
         let resulte = [a+b+c,d+e+f,g+h+i,a+d+g,b+e+h,c+f+i,a+e+i,g+e+c];
-        for(let i=0;i<9;i++){
+        var allRes='';
+        for(let i=0;i<8;i++){
             let response = resulte[i];
             if(response=="000" || response=="111"){
                 setTimeout(()=>{
-                    alert('La partie est terminé! ');
-                },500);
+                    let signe=response=="000"?'x':'0';
+                    alert(' La partie est terminé! \n Gagné est celui qui port le "'+signe+'"');
+                    document.location.href='index.html';
+                },300);
             }
+            allRes+=response;
         }
+        // console.log(typeof(eval(allRes)));
+        if(typeof(eval(allRes))){
+            setTimeout(()=>{
+                alert(' La partie est terminé! \n Auccun gagné pour le moment.');
+                document.location.href='index.html';
+            },300);
+        }else{
+            console.clear();
+        }
+        allRes='';
     });
 });
-// let i = 78
-//  re

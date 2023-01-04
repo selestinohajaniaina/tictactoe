@@ -1,16 +1,33 @@
-.case{
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
+body {
+  background: #575252;
+  text-shadow:0px 0px 10px #ffffff;
 }
-p{
-    text-align: center;
-    font-size: 70pt;
-    transform: rotateZ(45deg);
-    padding: 0;
-    margin: 0;
-    cursor: default;
+table tr {
+    background: #65710b;
+  text-align: center;
 }
-.contener{
+.case {
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border: #bad10d solid 5px;
+  box-shadow: 0px 0px 10px 10px #d5ff72;
+}
+p {
+  font-size: 70pt;
+  font-family: cooper;
+  transform: rotateZ(45deg);
+  padding: 0;
+  margin: 0;
+  cursor: default;
+}
+.contener {
+  border: 1px solid red;
+  width: fit-content;
+  margin: 10px auto;
+}
+.icon p {
+  width: fit-content;
+  position: fixed;
 }
