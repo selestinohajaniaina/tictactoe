@@ -1,10 +1,45 @@
 body {
   background: #575252;
-  text-shadow:0px 0px 10px #ffffff;
+  text-shadow: 0px 0px 10px #ffffff;
+}
+.icon p {
+  width: fit-content;
+  position: fixed;
+}
+.contener {
+  border: 1px solid red;
+  width: fit-content;
+  margin: 10px auto;
 }
 table tr {
-    background: #65710b;
+  background: #65710b;
   text-align: center;
+}
+table #plus {
+  animation: anim 0.5s linear;
+}
+table #rong {
+  animation: anim1 0.5s linear;
+}
+@keyframes anim {
+  from {
+    transform: rotateZ(45deg) scale(2);
+    opacity: 0;
+  }
+  to {
+    transform: rotateZ(45deg) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes anim1 {
+  from {
+    transform: scale(2);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 .case {
   overflow: hidden;
@@ -21,13 +56,4 @@ p {
   padding: 0;
   margin: 0;
   cursor: default;
-}
-.contener {
-  border: 1px solid red;
-  width: fit-content;
-  margin: 10px auto;
-}
-.icon p {
-  width: fit-content;
-  position: fixed;
 }

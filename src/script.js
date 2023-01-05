@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    const croix = "<p style='color:#b00606'>+</p>";
-    const circle = "<p style='transform:none;font-size:50pt;color:#359f00'>O</p>";
+    const croix = "<p id='plus' style='color:#b00606'>+</p>";
+    const circle = "<p id='rong' style='transform:none;font-size:50pt;color:#359f00'>O</p>";
     let tour=0;
     let colonne="num";
     $(".case").click(function(){
