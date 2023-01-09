@@ -39,7 +39,7 @@ $(document).ready(function(){
             if(response=="000" || response=="111"){
                 setTimeout(()=>{
                     let signe=response=="000"?'x':'0';
-                    alert(' La partie est terminé! \n Gagné est celui qui port le "'+signe+'"');
+                    alert(` La partie est terminé! \n Gagné est celui qui port le ${signe}`);
                     document.location.href='index.html';
                 },300);
             }
